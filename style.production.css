@@ -1,0 +1,627 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+$font-stack: 'Poppins',
+sans-serif;
+$font-variant: small-caps;
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+    width: 100%;
+    line-height: 1.15;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+
+    /*    position: absolute;*/
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-image: url(/img/collage.jpeg);
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    background-image: url(/img/collage.jpeg);
+    background-size: cover;
+    background-repeat: repeat;
+    text-transform: uppercase;
+    font-variant: small-caps;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    background-size: cover;
+    opacity: 0.9;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-variant: small-caps;
+}
+
+header {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF0E2;
+    height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+.page-header__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 200px;
+    flex: 0 1 200px;
+    opacity: 0.9;
+}
+
+.page-header__item:last-child {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: right;
+}
+
+.navigation-list {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.navigation-list__item {
+    padding: 0 20px;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+/* Removing the underlining on on the active element on the navigation list */
+.navigation-list__item--active {
+    color: #FFCE9D;
+    /*    .opacity: 0.9;*/
+}
+
+.navigation-list__item:hover {
+    color: #FFCE9D;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+.grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 300px 20px 300px 20px 300px;
+    grid-template-columns: 300px 300px 300px;
+    -ms-grid-rows: 300px 20px 300px;
+    grid-template-rows: 300px 300px;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    font-variant: small-caps;
+    padding: 5px;
+}
+
+.grid > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+.grid > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+
+.grid > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+}
+
+.grid > *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+}
+
+.grid > *:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+}
+
+.grid > *:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+}
+
+.grid > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+.grid > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+}
+
+.grid > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+}
+
+.grid > *:nth-child(4) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+}
+
+.grid > *:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+}
+
+.grid > *:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 5;
+}
+
+.grid__item {
+    background-color: #FFF0E2;
+    padding: 0 0 5px 10px;
+}
+
+.grid__item:last-child {
+    -ms-grid-column: 3;
+    grid-column: 3 / 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+}
+
+.intro {
+    display: inline-block;
+    line-height: 15px;
+}
+
+span:hover {
+    color: #E6A96C;
+    cursor: pointer;
+}
+
+span:focus {
+    color: #E6A96C;
+    cursor: pointer;
+}
+
+.link-to-coding {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 400px;
+    margin: 0.67em 0;
+    /*  text-decoration: underline; */
+    color: black;
+    opacity: 0.8;
+}
+
+#about-me {
+    position: inherit;
+    display: inline-block;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;
+    color: black;
+    /*    opacity: 0.8;*/
+    /*  background-color: antiquewhite; */
+}
+
+#my-address {
+    font-size: 18px;
+    font-weight: 100px;
+    text-decoration: none;
+    color: #E6A96C;
+}
+
+#my-skype {
+    font-size: 18px;
+    font-weight: 100px;
+    text-decoration: none;
+    color: #E6A96C;
+}
+
+#my-email {
+    font-size: 18px;
+    font-weight: 100px;
+    text-decoration: none;
+    color: #E6A96C;
+}
+
+#call-us {
+    font-size: 15px;
+    font-weight: inherit;
+    text-decoration: none;
+    color: black;
+}
+
+#my-skype:hover {
+    font-size: 17px;
+    font-weight: 100px;
+    text-decoration: none;
+    color: #E6A96C;
+}
+
+#my-email:hover {
+    font-size: 17px;
+    font-weight: 100px;
+    text-decoration: none;
+    color: #E6A96C;
+}
+
+#call-us:hover {
+    font-size: 15px;
+    font-weight: 100px;
+    text-decoration: none;
+    color: #E6A96C;
+}
+
+.profile {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.profile_portrait {
+    display: block;
+    float: left;
+    /*    width: 250px;*/
+    margin-right: 40px;
+    min-width: 360px;
+    max-width: 40%;
+    border-radius: 50%;
+    text-align: center;
+}
+
+th {
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: inherit;
+    opacity: 0.8;
+    float: left;
+}
+
+td {
+    font-size: 15px;
+}
+
+.button,
+button {
+    /* overwrites browser defaults */
+    /* resets the border */
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* style button */
+    background-color: inherit;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    /* width of the border, type, color */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    -webkit-transition: 0.2s opacity;
+    -o-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.9;
+}
+
+#my_address {
+    font-size: 20px;
+}
+
+/* a:hover MUST come after a:visited in the CSS definition in order to be effective. Likewise, a:active MUST come after a:hover in the CSS definition in order to work. This means that in the example above, you’d want to make sure you move your a:hover to AFTER your a:visited. */
+
+a {
+    color: #FFCE9D;
+    background-color: transparent;
+}
+
+a link-to-coding:visited {
+    /* visited link */
+    color: #E6A96C;
+}
+
+a:hover {
+    /* No underlining when hovering over link */
+    color: #BE7E3E;
+    text-decoration: none;
+}
+
+a:focus {
+    /* No underlining when hovering over link */
+    color: #BE7E3E;
+    text-decoration: none;
+}
+
+a:active {
+    /* selected link */
+    color: #BE7E3E;
+}
+
+form {
+    /*    width: auto;*/
+    max-width: 320px;
+    font-size: 15px;
+    margin: 5px;
+    /*    border: 5px;*/
+}
+
+p > label {
+    padding: 10px;
+    display: inline-block;
+}
+
+input[type="area-code"] {
+    width: 50px;
+    border: 0, 5px black;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 4px;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+fieldset {
+    width: 100%;
+    border: 0 5px black;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 4px;
+    resize: vertical;
+}
+
+input:invalid {
+    border: 0 0 5px red;
+}
+
+input:focus:invalid {
+    border: 0 0 5px red;
+}
+
+input:invalid:required {
+    background-color: antiquewhite;
+}
+
+input:valid {
+    border: 1px solid black;
+}
+
+.button {
+    display: inline-block;
+    /* overwrites browser defaults and resets the border */
+    padding: 5px 7px;
+    border: 1px black;
+    /* takes the font from the outer container */
+    font-size: 700 13px/18px Helvetica, arial;
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: #E6A96C;
+    color: white;
+    text-decoration: none;
+    /*adds spacing to the button (this will be discussed more in-depth later) */
+    border-radius: 5px;
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    float: right;
+}
+
+.button:hover,
+.button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.9;
+}
+
+@-webkit-keyframes color-change {
+    from {
+        fill: #edc655;
+    }
+
+    50% {
+        fill: #fcffad;
+    }
+
+    to {
+        fill: #f76414;
+    }
+}
+
+@keyframes color-change {
+    from {
+        fill: #edc655;
+    }
+
+    50% {
+        fill: #fcffad;
+    }
+
+    to {
+        fill: #f76414;
+    }
+}
+
+.sun {
+    -webkit-animation: 4s color-change infinite alternate linear;
+    animation: 4s color-change infinite alternate linear;
+}
+
+@-webkit-keyframes cloud-move {
+    from {
+        -webkit-transform: translate(0, 50px);
+        transform: translate(0, 50px);
+    }
+
+    to {
+        -webkit-transform: translate(200px, 50px);
+        transform: translate(200px, 50px);
+    }
+}
+
+@keyframes cloud-move {
+    from {
+        -webkit-transform: translate(0, 50px);
+        transform: translate(0, 50px);
+    }
+
+    to {
+        -webkit-transform: translate(200px, 50px);
+        transform: translate(200px, 50px);
+    }
+}
+
+.cloud-front {
+    -webkit-animation: 20s cloud-move infinite alternate linear;
+    animation: 20s cloud-move infinite alternate linear;
+}
+
+@-webkit-keyframes cloud-move-reverse {
+    from {
+        -webkit-transform: translate(446px, 48px);
+        transform: translate(446px, 48px);
+    }
+
+    to {
+        -webkit-transform: translate(100px, 48px);
+        transform: translate(100px, 48px);
+    }
+}
+
+@keyframes cloud-move-reverse {
+    from {
+        -webkit-transform: translate(446px, 48px);
+        transform: translate(446px, 48px);
+    }
+
+    to {
+        -webkit-transform: translate(100px, 48px);
+        transform: translate(100px, 48px);
+    }
+}
+
+.cloud-back {
+    -webkit-animation: 45s cloud-move-reverse infinite alternate linear;
+    animation: 45s cloud-move-reverse infinite alternate linear;
+}
+
+.page-footer {
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+}
+
+@media all and (max-width: 500px) {
+    .grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media all and (min-width: 500px) and (max-width: 750px) {
+    .grid {
+        -ms-grid-columns: 1fr 20px 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .grid {
+        grid-gap: 10px;
+    }
+
+    .grid__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+
+    h1,
+    h2 {
+        font-size: 22px;
+    }
+}

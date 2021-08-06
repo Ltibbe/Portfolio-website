@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About/Layla Tibbe</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="style.production.css">
+    <link rel="stylesheet" type="text/css" href="style.production.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/lips_logo.jpeg" alt="logo" class="page-header__item">
+        <nav>
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
+                </li>
+                <li role="presentation">
+                    <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact</h1>
+        <!--        <hr>-->
+        <div id="my_address">
+            Layla Tibbe<br>
+            Emser Str. 28<br>
+            12051 Berlin<br>
+            Deutschland<br>
+            <br>
+            <!-- Links to direct contact via telephone or skype calls -->
+            Tel: <a href="data-our-telephone-number" id="call-us" href="tel:+4915777062772">
+                +49 15777062772</a><br>
+            Skype: <a href="skype:layla.tibbe" id="my-skype">
+                layla.tibbe</a><br>
+            <!-- Links to contact via email -->
+            Email: <a href="mailto:layla.tibbe@gmail.com" id="my-email">
+                layla.tibbe@gmail.com</a><br><br>
+
+            <fieldset>
+                <form action="" method="post" id="contact-form">
+                    <p>Leave me a message:</p>
+                    <label class="email" for="your-email-address">E-mail: </label>
+                    <input type="email" id="your-email-address" name="email" required="required" placeholder="example@gmail.com" /><br><br>
+
+                    <label class="tel" for="contact-telephone-number">Telephone: </label>
+                    <input type="area-code" id="contact-telephone-number" maxlength="3" name="contact-telephone-number" placeholder="+49" />
+                    <input type="number" id="contact-telephone-number" name="contact-telephone-number" placeholder="15777063" /><br>
+
+                    <label class="message" for="your-message">Message: </label>
+                    <textarea name="your_message" id="your-message" maxlength="240" cols="30" rows="5" placeholder="Write your message here..."></textarea><br><br>
+
+                    <button class="button" value="Send">SEND
+                    </button>
+                </form>
+            </fieldset>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+            <a href="#" target="_blank"><img src="img/github_icon.svg" alt="github"></a>
+            <a href="#" target="_blank"><img src="img/linkd_in.svg" alt="linkd_in"></a>
+            <a href="#" target="_blank"><img src="img/twitter.svg" alt="twitter"></a>
+        </div>
+    </footer>
+
+    <!-- Use this to check for accessibilty 
+<div id="tota11y">    
+<script src="js/tota11y.min.js"></script> 
+</div>
+-->
+
+</body>
+
+
+</html>
