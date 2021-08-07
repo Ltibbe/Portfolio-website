@@ -8,9 +8,8 @@
     <link rel="shortcut icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link href="style.production.css">
+    <!-- <link href="style.production.css"> -->
     <link rel="stylesheet" type="text/css" href="style.production.css">
 </head>
 
@@ -44,7 +43,7 @@
             Deutschland<br>
             <br>
             <!-- Links to direct contact via telephone or skype calls -->
-            Tel: <a href="data-our-telephone-number" id="call-us" href="tel:+4915777062772">
+            Tel: <a href="data-our-telephone-number" id="call-us" >
                 +49 15777062772</a><br>
             Skype: <a href="skype:layla.tibbe" id="my-skype">
                 layla.tibbe</a><br>
@@ -53,14 +52,14 @@
                 layla.tibbe@gmail.com</a><br><br>
 
             <fieldset>
-                <form action="" method="post" id="contact-form">
+                <form action="mailto:layla.tibbe@gmail.com" method="post" id="contact-form">
                     <p>Leave me a message:</p>
                     <label class="email" for="your-email-address">E-mail: </label>
                     <input type="email" id="your-email-address" name="email" required="required" placeholder="example@gmail.com" /><br><br>
 
                     <label class="tel" for="contact-telephone-number">Telephone: </label>
-                    <input type="area-code" id="contact-telephone-number" maxlength="3" name="contact-telephone-number" placeholder="+49" />
-                    <input type="number" id="contact-telephone-number" name="contact-telephone-number" placeholder="15777063" /><br>
+                    <input type="tel" id="area-code" maxlength="4" name="contact-telephone-number" placeholder="+49" required/>
+                    <input type="tel" id="contact-telephone-number" name="contact-telephone-number" placeholder="15777063" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required /><br>
 
                     <label class="message" for="your-message">Message: </label>
                     <textarea name="your_message" id="your-message" maxlength="240" cols="30" rows="5" placeholder="Write your message here..."></textarea><br><br>
@@ -81,9 +80,9 @@
         </div>
     </footer>
 
-    <!-- Use this to check for accessibilty 
-<div id="tota11y">    
-<script src="js/tota11y.min.js"></script> 
+    <!-- Use this to check for accessibilty
+<div id="tota11y">
+<script src="js/tota11y.min.js"></script>
 </div>
 -->
 
