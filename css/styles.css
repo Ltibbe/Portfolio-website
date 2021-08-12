@@ -66,11 +66,11 @@ body {
 }
 
 header {
-    font-family: 'Poppins', sans-serif;
     background-color: var(--lighter-color);
-    height: 70px;
     display: flex;
     flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    height: 70px;
 }
 
 .page-header {
@@ -147,6 +147,8 @@ header {
 }
 
 .intro {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
     display: inline-block;
     line-height: 15px;
 }
@@ -171,6 +173,8 @@ h1 {
 }
 
 #about-me {
+    width: 100%;
+    padding: 40px;
     position: inherit;
     display: inline-block;
     text-align: justify;
@@ -229,6 +233,7 @@ h1 {
     text-align: center;
 }
 
+<<<<<<< Updated upstream
 th {
     text-decoration: none;
     font-size: 17px;
@@ -241,6 +246,55 @@ th {
 
 td {
     font-size: 15px;
+=======
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+thead th:nth-child(1) {
+    width: 30%;
+}
+
+thead th:nth-child(2) {
+    width: 30%;
+}
+
+thead th:nth-child(3) {
+    width: 35%;
+}
+
+th,
+td {
+    padding: 20px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    text-align: center;
+}
+
+th {
+    letter-spacing: 2px;
+}
+
+td {
+    letter-spacing: 1px;
+}
+
+tbody td {
+    text-align: center;
+}
+
+thead {
+    color: black;
+}
+
+thead th,
+td {
+    background: white;
+    border: 3px solid black;
+>>>>>>> Stashed changes
 }
 
 .button,
@@ -320,7 +374,21 @@ input[type="area-code"] {
     margin: 10px;
     padding: 4px;
     border-radius: 4px;
+<<<<<<< Updated upstream
     resize: vertical;
+=======
+    resize: horizontal;
+}
+
+#area-code {
+    width: 40px;
+    border: 0 5px black;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 4px;
+    border-radius: 4px;
+    resize: horizontal;
+>>>>>>> Stashed changes
 }
 
 input[type="text"],
@@ -376,6 +444,17 @@ input:valid {
     opacity: 0.9;
 }
 
+<<<<<<< Updated upstream
+=======
+.berlin-illustration {
+    width: 100%;
+    .max-width: 100%;
+    height: auto;
+    margin-left: 70%;
+    margin-right: auto;
+}
+
+>>>>>>> Stashed changes
 @keyframes color-change {
     from {
         fill: #edc655;

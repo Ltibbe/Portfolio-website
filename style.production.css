@@ -19,6 +19,7 @@ $font-variant: small-caps;
  */
 
 html {
+    margin: 0px;
     width: 100%;
     line-height: 1.15;
     /* 1 */
@@ -28,7 +29,11 @@ html {
     /*    position: absolute;*/
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+<<<<<<< Updated upstream
     background-image: url(/img/collage.jpeg);
+=======
+    background-image: url('./img/collage.jpeg');
+>>>>>>> Stashed changes
 }
 
 /* Sections
@@ -41,6 +46,10 @@ html {
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+<<<<<<< Updated upstream
+=======
+    overflow-x: hidden;
+>>>>>>> Stashed changes
 }
 
 main {
@@ -59,7 +68,6 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-    background-size: cover;
     opacity: 0.9;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -208,14 +216,14 @@ header {
     -ms-grid-column: 1;
 }
 
-.grid > *:nth-child(5) {
+.grid > *:nth-child(3) {
     -ms-grid-row: 3;
     -ms-grid-column: 3;
 }
 
-.grid > *:nth-child(6) {
+.grid > *:nth-child(3) {
     -ms-grid-row: 3;
-    -ms-grid-column: 5;
+    -ms-grid-column: 3;
 }
 
 .grid__item {
@@ -232,6 +240,8 @@ header {
 }
 
 .intro {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
     display: inline-block;
     line-height: 15px;
 }
@@ -251,6 +261,7 @@ span:focus {
 }
 
 h1 {
+  padding: 5px;
     font-size: 25px;
     font-weight: 400px;
     margin: 0.67em 0;
@@ -260,6 +271,8 @@ h1 {
 }
 
 #about-me {
+    width: 100%;
+    padding: 40px;
     position: inherit;
     display: inline-block;
     text-align: justify;
@@ -336,6 +349,7 @@ h1 {
     text-align: center;
 }
 
+<<<<<<< Updated upstream
 th {
     text-decoration: none;
     font-size: 17px;
@@ -348,6 +362,55 @@ th {
 
 td {
     font-size: 15px;
+=======
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+thead th:nth-child(1) {
+    width: 30%;
+}
+
+thead th:nth-child(2) {
+    width: 30%;
+}
+
+thead th:nth-child(3) {
+    width: 35%;
+}
+
+th,
+td {
+    padding: 20px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    text-align: center;
+}
+
+th {
+    letter-spacing: 2px;
+}
+
+td {
+    letter-spacing: 1px;
+}
+
+tbody td {
+    text-align: center;
+}
+
+thead {
+    color: black;
+}
+
+thead th,
+td {
+    background: white;
+    border: 3px solid black;
+>>>>>>> Stashed changes
 }
 
 .button,
@@ -362,13 +425,15 @@ button {
     background-color: inherit;
     color: white;
     text-decoration: none;
-    padding: 10px;
+    margin-top: 60px;
+    padding: 20px;
     border-radius: 3px;
     /* width of the border, type, color */
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     -webkit-transition: 0.2s opacity;
     -o-transition: 0.2s opacity;
     transition: 0.2s opacity;
+    /* position: absolute; */
 }
 
 button:hover,
@@ -435,7 +500,22 @@ input[type="area-code"] {
     margin: 10px;
     padding: 4px;
     border-radius: 4px;
+<<<<<<< Updated upstream
     resize: vertical;
+=======
+    resize: horizontal;
+}
+
+#area-code {
+    width: 20px;
+    border: 0 5px black;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 4px;
+    border-radius: 4px;
+    resize: horizontal;
+>>>>>>> Stashed changes
 }
 
 input[type="text"],
@@ -492,6 +572,17 @@ input:valid {
     opacity: 0.9;
 }
 
+<<<<<<< Updated upstream
+=======
+.berlin-illustration {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 23%;
+    overflow-x: hidden;
+}
+
+>>>>>>> Stashed changes
 @-webkit-keyframes color-change {
     from {
         fill: #edc655;
